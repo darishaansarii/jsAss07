@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment 07</title>
+    <style>
+        .img-div{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        span {
+            padding: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="showAlert()">Click me!</a>
+
+    <h1>Mobile Phone Lookup</h1>
+    <div class="img-div">
+        <img onclick="purchase()" src="https://images.samsung.com/is/image/samsung/p6pim/pk/sm-a566bliwpkd/gallery/pk-galaxy-a56-5g-sm-a566-sm-a566bliwpkd-thumb-545585596?$UX_EXT2_PNG$" alt="" height="300" width="300">
+        <img onclick="purchase()" src="https://img.freepik.com/premium-photo/smartphone-balancing-with-pink-background_23-2150271746.jpg" height="300" width="300" alt="">
+        <img onclick="purchase()" src="https://sparx.pk/cdn/shop/files/Edge-20-Pro-Sparkling-Blue.jpg?v=1721641402" height="300" width="300" alt="">
+    </div>
+    <br><br>
+    <table id="studentTable">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+        </tr>
+
+        <tr>
+            <td>0</td>
+            <td>Haya</td>
+            <td>10</td>
+            <td><button onclick="delRow(this)">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>Jihan</td>
+            <td>12</td>
+            <td><button onclick="delRow(this)">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Salar</td>
+            <td>12</td>
+            <td><button onclick="delRow(this)">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>3</td>
+            <td>Imama</td>
+            <td>12</td>
+            <td><button onclick="delRow(this)">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>4</td>
+            <td>Wali</td>
+            <td>10</td>
+            <td><button onclick="delRow(this)">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>5</td>
+            <td>Amal</td>
+            <td>10</td>
+            <td><button onclick="delRow(this)">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>6</td>
+            <td>Umar Hayat</td>
+            <td>12</td>
+            <td><button onclick="delRow(this)">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>7</td>
+            <td>Halay</td>
+            <td>10</td>
+            <td><button onclick="delRow(this)">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>8</td>
+            <td>Faris Ghazi</td>
+            <td>12</td>
+            <td><button onclick="delRow(this)">Delete</button></td>
+        </tr>
+
+        <tr>
+            <td>9</td>
+            <td>Zumar Yousuf</td>
+            <td>12</td>
+            <td><button onclick="delRow(this)">Delete</button></td>
+        </tr>
+
+    </table>
+
+    <!-- Question 04 -->
+    <img src="https://5.imimg.com/data5/SELLER/Default/2023/3/296178163/GX/GL/SD/186724856/vivo-mobile-phone.jpg" onmouseover="src='https://images.samsung.com/is/image/samsung/p6pim/pk/sm-s721blbcpkd/gallery/pk-galaxy-s24-fe-s721-sm-s721blbcpkd-thumb-543637923?$UX_EXT2_PNG$'" onmouseout="src='https://5.imimg.com/data5/SELLER/Default/2023/3/296178163/GX/GL/SD/186724856/vivo-mobile-phone.jpg'" width="300" height="300" alt="">
+
+    <!-- Question 05 -->
+     <h1>Counter</h1>
+     <button onclick="countIncrease()">Increase</button>
+     <span id="countValue">100</span>
+     <button onclick="countDecrease()">Decrease</button>
+
+    
+    <script src="./app.js"></script>
+</body>
+</html>
